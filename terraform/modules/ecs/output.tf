@@ -17,3 +17,7 @@ output "alb_zone_id" {
 output "security_group_id" {
   value = "${aws_security_group.ecs_service.id}"
 }
+
+output "alb_dns_name" {
+  value = "${aws_alb.alb_openjobs.dns_name}"
+}
